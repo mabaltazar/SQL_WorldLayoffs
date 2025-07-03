@@ -1,19 +1,19 @@
 # 💼 Layoff Data Exploration Project
-This project features end-to-end data cleaning and exploratory analysis on global layoff data using SQL. The goal was to uncover patterns in workforce reduction across industries, companies, and countries over time. The project also applies advanced SQL techniques to track temporal trends, remove duplicates, standardize messy entries, and evaluate the scale and progression of layoffs.
+This project focuses on cleaning and exploring a global layoff dataset using structured SQL techniques. The goal is to transform messy, inconsistent data into a reliable foundation for insight generation—identifying trends in company layoffs across industries, countries, and time.  
 
 🎯 Objective
-To clean and analyze layoff data by:
-- Identifying key trends in layoffs across time and geography
-- Profiling the most heavily affected companies and industries
-- Applying SQL best practices for scalable and efficient exploration
+- Remove duplicate records, standardize column entries, and handle missing or blank values
+- Normalize dates, locations, industries, and numeric types for consistency
+- Explore aggregated layoff trends by company, sector, region, and year
+- Use SQL window functions to calculate rolling totals and yearly rankings  
 
 🧰 Tools Used
-- MySQL
-- SQL Window Functions (ROW_NUMBER(), DENSE_RANK(), OVER)
+- - SQL (MySQL / SQL Server)
 - Common Table Expressions (CTEs)
-- Text functions (TRIM(), SUBSTRING()), Aggregates
-- Date Functions and STR_TO_DATE() for formatting
-- Self-Joins for data enrichment
+- Window Functions: ROW_NUMBER(), DENSE_RANK(), OVER()
+- String Functions: TRIM(), SUBSTRING(), REPLACE()
+- Date Parsing: STR_TO_DATE(), YEAR()
+- Data Source: Custom-imported layoff dataset in a world_layoffs schema
 
 ⚙️ Steps Taken
 - Created Staging Tables to isolate and clean raw data
